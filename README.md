@@ -54,6 +54,56 @@ https://watch-party-client-nall.onrender.com
 
 ---
 
+# ▶️ Run Locally
+
+The application requires both the frontend and backend servers to be running.
+
+## 1. Install Frontend Dependencies
+
+From the project root:
+
+```bash
+npm install
+```
+
+## 2. Install Backend Dependencies
+
+Open a terminal and run:
+
+```bash
+cd server
+npm install
+```
+
+## 3. Start the Backend Server
+
+From the `server` directory:
+
+```bash
+npm start
+```
+
+The backend will run on:
+
+```text
+http://localhost:3000
+```
+
+## 4. Start the Frontend
+
+Open a **second terminal** and go back to the project root:
+
+```bash
+cd ..
+npm run dev
+```
+
+The frontend will run on:
+
+```text
+http://localhost:5173
+```
+
 # 🏗️ Architecture Overview
 
 The Watch Party application uses a client-server architecture with
