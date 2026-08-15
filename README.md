@@ -54,6 +54,25 @@ https://watch-party-client-nall.onrender.com
 
 ---
 
+# 🏗️ Architecture Overview
+
+The Watch Party application uses a client-server architecture with
+WebSockets for real-time communication.
+
+## Application Flow
+
+```text
+React Frontend
+     │
+     │ Socket.IO
+     ▼
+Node.js + Express + Socket.IO Server
+     │
+     │ Broadcast events
+     ▼
+Users connected to the same room
+```
+
 ## 📁 Project Structure
 
 ```text
@@ -87,3 +106,5 @@ watch-party/
 ├── package-lock.json
 ├── README.md
 └── vite.config.js
+
+
