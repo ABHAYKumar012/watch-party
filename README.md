@@ -7,7 +7,7 @@ Users can create or join rooms using a unique room code and watch videos togethe
 ## 🚀 Live Demo
 
 **Live Application:**  
-https://client-nall.onrender.com
+https://watch-party-client-nall.onrender.com
 
 ---
 
