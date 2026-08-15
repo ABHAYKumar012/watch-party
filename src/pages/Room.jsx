@@ -761,13 +761,21 @@ const extractVideoId = (input) => {
     // HOST TRANSFERRED
     // ----------------------------------------------
 
-    const handleHostTransferred = (data) => {
+   const handleHostTransferred = (data) => {
+  console.log("HOST TRANSFERRED:", data);
+  console.log("MY USER ID:", myUserId);
 
-      setParticipants(
-        data.participants || []
-      );
+  setParticipants(data.participants || []);
 
-    };
+  // If WE are the newly promoted host
+  if (data.newHostId === myUserId) {
+    setMyRole("host");
+
+    showToast("You are now the host.");
+
+    console.log("✅ I AM NOW HOST");
+  }
+};
 
 
     // ----------------------------------------------
