@@ -1625,25 +1625,214 @@ input {
 
 @media (max-width: 650px) {
 
+  /* =========================================================
+     LANDING PAGE - MOBILE
+  ========================================================= */
+
   .app {
-    padding: 30px 15px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px 14px 35px;
+    overflow-x: hidden;
   }
 
-  .room-card {
-    padding: 25px 20px;
+  .landing-page {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .hero {
+    margin-bottom: 24px;
+  }
+
+  .hero-icon {
+    width: 82px;
+    height: 68px;
+    border-radius: 22px;
+    font-size: 38px;
+    border-width: 4px;
   }
 
   .hero h1 {
-    font-size: 48px;
+    font-size: clamp(36px, 11vw, 48px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    white-space: nowrap;
   }
 
   .hero p {
-    font-size: 17px;
+    margin: 8px 5px 14px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 
-  .features {
-    padding: 15px;
+  .hero-line {
+    width: 75px;
+    height: 5px;
   }
+
+
+  /* =========================================================
+     CREATE / JOIN CARDS
+  ========================================================= */
+
+  .room-options {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 520px;
+
+    gap: 20px;
+  }
+
+  .room-card {
+    width: 100%;
+
+    padding: 24px 20px 26px;
+
+    border-radius: 22px;
+  }
+
+  .card-icon {
+    width: 78px;
+    height: 78px;
+
+    margin-bottom: 10px;
+
+    font-size: 36px;
+  }
+
+  .room-card h2 {
+    margin: 6px 0;
+
+    font-size: 27px;
+
+    line-height: 1.15;
+
+    white-space: nowrap;
+  }
+
+  .room-card > p {
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    margin: 0 auto 20px;
+
+    max-width: 310px;
+  }
+
+  .room-card label {
+    margin: 13px 0 7px;
+
+    font-size: 15px;
+  }
+
+
+  /* =========================================================
+     INPUTS
+  ========================================================= */
+
+  .input-wrapper {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 14px;
+
+    border-radius: 12px;
+  }
+
+  .input-wrapper span {
+    font-size: 21px;
+  }
+
+  .input-wrapper input {
+    min-width: 0;
+
+    font-size: 16px;
+  }
+
+
+  /* =========================================================
+     BUTTONS
+  ========================================================= */
+
+  .room-card button {
+    width: 100%;
+
+    height: 54px;
+
+    margin-top: 18px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+  }
+
+
+  /* =========================================================
+     FEATURES
+  ========================================================= */
+
+  .features {
+    width: 100%;
+
+    max-width: 520px;
+
+    margin-top: 20px;
+
+    padding: 8px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    border-radius: 20px;
+  }
+
+  .feature {
+    width: 100%;
+
+    padding: 14px 5px;
+
+    gap: 12px;
+  }
+
+  .feature + .feature {
+    border-left: none;
+
+    border-top:
+      1px solid
+      rgba(120, 110, 170, 0.25);
+  }
+
+  .feature-icon {
+    width: 52px;
+    height: 52px;
+
+    font-size: 23px;
+  }
+
+  .feature h3 {
+    font-size: 16px;
+
+    margin-bottom: 3px;
+  }
+
+  .feature p {
+    font-size: 13px;
+
+    line-height: 1.4;
+  }
+
+
+  /* =========================================================
+     ROOM PAGE - MOBILE
+  ========================================================= */
 
   .room-header {
     height: auto;
@@ -1680,7 +1869,56 @@ input {
   .video-url-section {
     flex-direction: column;
   }
+}
 
+
+/* =========================================================
+   EXTRA SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .app {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .room-card {
+    padding: 22px 16px 24px;
+  }
+
+  .card-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 32px;
+  }
+
+  .room-card h2 {
+    font-size: 24px;
+  }
+
+  .room-card > p {
+    font-size: 14px;
+  }
+
+  .input-wrapper {
+    height: 52px;
+  }
+
+  .room-card button {
+    height: 52px;
+
+    font-size: 17px;
+  }
 }
 /* =========================================================
    PARTICIPANT MANAGEMENT
