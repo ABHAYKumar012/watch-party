@@ -38,6 +38,25 @@ function App() {
     setRoomData(null);
   };
 
+  useEffect(() => {
+  const handleBeforeUnload = (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+  };
+
+  window.addEventListener(
+    "beforeunload",
+    handleBeforeUnload
+  );
+
+  return () => {
+    window.removeEventListener(
+      "beforeunload",
+      handleBeforeUnload
+    );
+  };
+}, []);
+
   if (roomData) {
     return (
       <Room
